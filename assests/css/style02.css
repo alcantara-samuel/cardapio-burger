@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cooper Std', sans-serif;
+                                                
+}
+.container{
+    display: flex;
+    width: 100vw;
+}
+.menu{
+    height: 150px;
+    background-color: #DF6207;
+    padding: 0 70px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-text{
+    font-size: 50px;
+    font-weight: 600;
+}
+.menu .voltar-button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+.cardapio{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+}
+.cardapio-item{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.cardapio-item--img{
+    background-image: url(../img/cardapio/bacon.jpg);
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    border-radius: 5px 5px 0 0;
+}
+.cardapio-item--text{
+    flex: 1.3;
+    padding: 5px;
+}
+.item-nome{
+    font-size: 20px;
+    font-weight: 600;
+    color: #211415;
+}
+.item-desc{
+    color: #9D9797;
+    font-size: 12px;
+}
+.item-price{
+    font-size: 14px;
+    font-weight: 600;
+    color: #CECECE;
+    margin-top: 15px;
+    text-align: end;
+}
+.item-price span{
+    font-size: 18px;
+    color: #32CF52;
+    
+}
+
+aside{
+    width: 60vw;
+    bottom: 0;
+    background-color: #FFFDFD;
+    box-shadow: 0px 4px 10px #000;
+    display: flex;
+}
+.cart{
+    margin: 20px;
+    width: 300px;
+}
+.cart-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cart-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding: 5px 0px;
+}
+.cart-options img{
+    width: 40px;
+    height: 40px;
+}
+.cart-options--name{
+    font-size: 20px;
+    margin-left: -100px;
+}
+.cart-options--button{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CCC;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.cart-options--buttonMenos{
+    border-right: 1px solid #CCC;
+    width: 33%;
+    cursor: pointer;
+}
+.cart-options--buttonQt{
+    padding: 5px;  
+    width: 33%;
+}
+.cart-options--buttonMais{
+    border-left: 1px solid #CCC;
+    width: 33%;
+    cursor: pointer;
+}
+.cart-options--subtotal{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 1px solid #CCC;
+}
+.cart-options--subtotal span{
+    color: #999
+}
+.cart-options--desconto{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 1px solid #CCC;
+}
+.cart-options--desconto span{
+    color: #999
+}
+.cart-options--total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 1px solid #CCC;
+}
+.cart-options--total span{
+    color: #32CF52
+}
+.cart-options--finallyButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #FFF;
+    background-color:  #DF6207;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.cart-options--finallyButton:hover{
+    opacity: 0.7;
+}
