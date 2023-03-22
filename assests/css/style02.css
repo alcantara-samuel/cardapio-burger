@@ -112,7 +112,7 @@ aside{
     font-size: 20px;
     margin-left: -100px;
 }
-.cart-options--button{
+.cart-options--button, .modal-options--button{
     display: flex;
     height: 20px;
     align-items: center;
@@ -122,19 +122,22 @@ aside{
     text-align: center;
     border-radius: 5px;
 }
-.cart-options--buttonMenos{
+.cart-options--buttonMenos, .modal-options--buttonMenos{
     border-right: 1px solid #CCC;
     width: 33%;
     cursor: pointer;
+    color: #000;
 }
-.cart-options--buttonQt{
+.cart-options--buttonQt, .modal-options--buttonQt{
     padding: 5px;  
     width: 33%;
+    color: #000;
 }
-.cart-options--buttonMais{
+.cart-options--buttonMais, .modal-options--buttonMais{
     border-left: 1px solid #CCC;
     width: 33%;
     cursor: pointer;
+    color: #000;
 }
 .cart-options--subtotal{
     display: flex;
@@ -168,22 +171,86 @@ aside{
     color: #333;
     margin-top: 20px;
     border-bottom: 1px solid #CCC;
+    margin-bottom: 30px;
 }
 .cart-options--total span{
     color: #32CF52
 }
-.cart-options--finallyButton{
+.cart-options--finallyButton, .modal-finallyButton{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     color: #FFF;
     background-color:  #DF6207;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 7px;
-    margin-top: 30px;
     cursor: pointer;
 }
-.cart-options--finallyButton:hover{
+.cart-options--finallyButton:hover , .modal-finallyButton:hover{
+    opacity: 0.7;
+}
+
+
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modol-box{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 40PX #CCC;
+    border-radius: 10px;
+}
+.modal-box--img{
+    flex: 1;
+    background-color: red;
+    background-image: url(../img/cardapio/bacon.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+.modal-box--text{
+    flex: 1;
+    margin: 10px;
+}
+.modal-box--textSabor{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.modal-box--textPreco, .modal-options{
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.modal-box--textPreco span{
+    color: #32CF52;
+    font-size: 20px;
+    font-weight: 600;
+}
+.modal-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+}
+.modal-cancelButton{
+    color: #999;
+    cursor: pointer;
+}
+.modal-cancelButton:hover{
     opacity: 0.7;
 }
