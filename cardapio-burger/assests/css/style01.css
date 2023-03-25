@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cooper Std', sans-serif;
+                                                
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 30px;
+}
+.box-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo{
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    background-color: #D02500;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 0px 0px 10px 10px;
+    right: 0;
+}
+
+.dialog{
+    line-height: 60px;
+    font-size: 30px;
+}
+.dialog h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+.dialog #dia1{
+    margin-top: 20px;
+    color: #64240F;
+}
+.dialog #dia2{
+    color: #DF6207;
+    margin-bottom: 20px;
+}
+.dialog .button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #FFF;
+    background-color:  #DF6207;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.dialog .button:hover{
+    opacity: 0.7;
+}
+
+
+
+.box-right{
+    flex: 0.8;
+    background-color: #DF6207;
+    border-radius: 0px 0px 0px 15%;
+    display: flex;
+    align-content: center;
+}
+.box-right .burguer-name{
+    bottom: 50%;
+    right: 0;
+    position: absolute;
+    color: #FFF;
+    opacity: 0.3;
+    rotate: -90deg;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-overflow: hidden;
+}
+.box-right .burguer-imgs{
+    margin-left: -200px;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-right .burguer-imgs img{
+    position: absolute;
+}
+.box-right .burguer-imgs img:nth-child(1){
+    z-index: 9;
+    width: 340px;
+}
+.box-right .burguer-imgs img:nth-child(2){
+    margin-top: 120px;
+    z-index: 8;
+    width: 270px;
+}
+.box-right .burguer-imgs img:nth-child(3){
+    margin-top: 180px;
+    width: 320px;
+    z-index: 7;
+}
+.box-right .burguer-imgs img:nth-child(4){
+    margin-top: 230px;
+    z-index: 6;
+    width: 320px;
+}
+.box-right .burguer-imgs img:nth-child(5){
+    margin-top: 240px;
+    z-index: 5;
+    width: 320px;
+}
+.box-right .burguer-imgs img:nth-child(6){
+    margin-top: 300px;
+    z-index: 4;
+    width: 320px;
+}
+.box-right .burguer-imgs img:nth-child(7){
+    margin-top: 320px;
+    z-index: 3;
+    width: 290px;
+}
+.box-right .burguer-imgs img:nth-child(8){
+    margin-top: 380px;
+    z-index: 2;
+    width: 260px;
+}
+.box-right .burguer-imgs img:nth-child(9){
+    margin-top: 400px;
+    z-index: 1;
+    width: 320px;
+}
+
+@media (max-width: 1043px) {
+    .dialog{
+        font-size: 15px;
+        line-height: normal;
+    }
+    .dialog h1{
+        font-size: 30px;
+    }
+    .dialog .button{
+        font-size: 13px;
+    }
+    .box-right .burguer-name{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width: 740px){
+    .box-right .burguer-imgs{
+        display: none;
+    }
+    .box-right .burguer-name{
+        text-overflow: hidden;
+        font-size: 25px;
+    }
+}
